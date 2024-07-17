@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Inter";
+}
+/* header section start here */
+.header-container{
+    max-width: 1360px;
+    height: 620px;
+    padding-top: 20px;
+    background-color: rgb(39, 30, 30);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.nav-title{
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-left: 9rem;
+}
+.nav-item{
+    margin-right: 11rem;
+    border: 1px solid white;
+    height: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    align-items: center;
+    border-radius: 2.2rem;
+}
+.nav-a{
+   border-radius: 1.5rem;
+   border: none;
+   padding: 8px 16px 8px 16px;
+}
+a{
+    font-size: 1.2rem;
+    font-weight: 400;
+    opacity: 0.9;
+    text-decoration: none;
+    color: #ffffff;
+}
+.ham-burger{
+    display: none;
+}
+/* share style */
+.color{
+    color: #E6533C;
+}
+.white-color{
+    color: #ffffff;
+}
+.primary-color{
+    background-color: #E6533C;
+}
+/* banner content style */
+.banner-content{
+    display: flex;
+    gap: 150px;
+}
+.banner-title{
+    width: 400px;
+    height: 380px;
+    margin: 80px 0 0 200px;
+}
+.title{
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+.text{
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.banner-btn{
+    padding: 16px 40px 16px 40px;
+    border-radius: 42px;
+    border: none;
+}
+.banner-btn1{
+    padding: 16px 40px 16px 40px;
+    border-radius: 42px;
+    background-color: #141212;
+    color: #ffffff;
+    border: 1px solid wheat;
+}
+/* banner image style */
+.banner-image{
+    width: 350px;
+    height: 540px;
+    position: relative;
+}
+.banner-image img{
+    width: 100%;
+    height: 100%;
+}
+.image-box1{
+    position: absolute;
+    height: 80px;
+    margin-left: 75%;
+    margin-top: 12%;
+    border-radius: 1rem;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    padding: 8px 12px 8px 12px;
+}
+.image-box1 h5{
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+.image-box1, .image-box2 p{
+    font-size: 0.6rem;
+    font-weight: 400;
+}
+
+.box-title{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.image-box2{
+    display: flex;
+    position: absolute;
+    height: 50px;
+    margin-left: 55%;
+    margin-top: 30%;
+    border-radius: 1rem;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    padding: 8px 12px 6px 12px;
+}
+.box{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+
+
+
+
+/* media query here */
+@media screen and (max-width: 567px) {
+    .header-container{
+        width: 100%;
+        height: 100%;
+    }
+      .banner-content{
+        flex-direction: column;
+        gap: 0;
+    }
+    .banner-title{
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    .nav-title{
+        margin-left: 15px;
+    }
+    .nav-item{
+        display: none;
+    }
+    .ham-burger{
+        display: block;
+        font-size: 2rem;
+        margin-right: 5px;
+        color: #ffffff;
+    }
+    .image-box1{
+        margin-left: 50%;
+        margin-top: 500px;
+    }
+    .image-box2{
+        margin-left: 8%;
+        margin-top: 700px;
+    }
+}
