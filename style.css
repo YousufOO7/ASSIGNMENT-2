@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -21,9 +24,12 @@ nav{
     margin-top: 2rem;
 }
 .nav-title{
-    font-size: 2.2rem;
-    font-weight: 800;
+    font-size: 3rem;
+    font-weight: 900;
     margin-left: 9rem;
+}
+.style{
+    font-family: "Dancing Script";
 }
 .nav-item{
     margin-right: 11rem;
@@ -68,9 +74,10 @@ a{
     color: #ffffff;
 }
 .text{
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     font-weight: 400;
     color: #ffffff;
+    opacity: 0.8;
     margin-bottom: 1.2rem;
 }
 /* banner content style */
@@ -91,6 +98,7 @@ a{
 .banner-text{
     font-size: 0.8rem;
     font-weight: 400;
+    opacity: 0.8;
     margin-bottom: 2rem;
 }
 .banner-btn{
@@ -272,15 +280,43 @@ a{
 }
 /* Meet Our Team section end here */
 
-
-
-
-
+/* footer start here */
+.footer{
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+}
+.footer-content{
+    width: 70%;
+    height: 220px;
+    margin: 0 auto;
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: 1.8fr 0.75fr 0.75fr;
+    gap: 20px;
+}
+.row2 p{
+    opacity: 0.8;
+}
+.row3 p{
+    opacity: 0.8;
+}
+.footer-hr{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.about{
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0.8;
+}
+/* Footer section end here */
 
 
 /* media query here */
 @media screen and (max-width: 567px) {
-    .header-container{
+    .header-container, .footer{
         height: 100%;
     }
     .habit-container{
@@ -322,9 +358,10 @@ a{
     .habit-title, .btn{
         width: 80%;
     }
-    .habit-content, .card{
+    .habit-content, .card, .footer-content{
         grid-template-columns: 1fr;
     }
+    
     .habit-image{
         margin: 0 auto;
     }
@@ -342,6 +379,11 @@ a{
     .our-team{
         width: 100%;
     }
+    .footer-content{
+        width: 96%;
+        margin-left: 10px;
+        padding-top: 0;
+    }
     .image-card{
         margin: 0 auto;
     }
@@ -353,5 +395,10 @@ a{
         height: 1600px;
         margin-left: 20px;
     }
-
+    .footer{
+        margin-top: 1100px;
+    }
+    .footer-hr{
+        margin-top: 400px;
+    }
 }
