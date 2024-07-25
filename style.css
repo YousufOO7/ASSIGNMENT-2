@@ -56,6 +56,7 @@ a{
 .ham-burger{
     display: none;
 }
+
 /* share style */
 
 .color{
@@ -234,6 +235,85 @@ a{
 }
 /* Run an Extra Mile Easily section end here */
 
+/* BMI Calculator section start here */
+.calculator{
+   margin-top: 50px;
+
+}
+.calculator-title{
+    width: 30%;
+    margin: 0 auto;
+}
+.calculator-content{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 400px;
+    backdrop-filter: blur(30px);
+    background: rgba(36, 35, 35, 0.425);
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.bmi-chart{
+    margin-top: 80px;
+    margin-left: 200px;
+}
+table{
+    text-align: center;
+    border-collapse: collapse;
+    width: 250px;
+    height: 180px;
+}
+th{
+    font-size: 1rem;
+    color: #ffffff;
+}
+td{
+    font-size: 0.6rem;
+    color: #ffffff;
+}
+th,td{
+    border: 1px solid white;
+}
+.calculate{
+    margin-top: 80px;
+}
+.calculate-info{
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+#box5{
+    grid-column: span 2;
+    border-radius: 0.5rem;
+}
+.info{
+    backdrop-filter: blur(30px);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+    color: #ffffff;
+}
+input{
+    padding: 12px 30px 12px 20px;
+    backdrop-filter: blur(30px);
+    background: rgba(43, 39, 39, 0.205);
+    border-radius: 0.5rem;
+    border: none;
+    color: #ffffff;
+}
+select, option{
+    width: 100%;
+    padding: 12px 30px 12px 20px;
+    backdrop-filter: blur(30px);
+    background: rgba(43, 39, 39, 0.205);
+    border-radius: 0.5rem;
+    color: #ffffff;
+    opacity: 0.4;
+    border: none;
+}
+/* BMI Calculator section end here */
+
 /* Meet Our Team section start here */
 .our-team{
     width: 75%;
@@ -280,6 +360,55 @@ a{
 }
 /* Meet Our Team section end here */
 
+/* Price subscribe section start here */
+
+.price-subscribe{
+    width: 75%;
+    height: 450px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.price-content{
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;
+    display: flex;
+    gap: 200px;
+}
+.price{
+    width: 40%;
+    height: 300px;
+    align-items: center;
+    margin: 50px 0 0 50px;
+}
+.price h3{
+    margin-left: 30%;
+    font-size: 4rem;
+    color: #E6533C;
+}
+.item{
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    border-radius: 2rem;
+    background: rgb(207, 205, 205) 100%;
+}
+.item-head{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.item p{
+    font-weight: 900;
+}
+.subscribe{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+/* Price subscribe section end here */
+
+
 /* footer start here */
 .footer{
     width: 100%;
@@ -316,7 +445,7 @@ a{
 
 /* media query here */
 @media screen and (max-width: 567px) {
-    .header-container, .footer{
+    .header-container, .footer, .calculator-content, .price-subscribe{
         height: 100%;
     }
     .habit-container{
@@ -358,12 +487,16 @@ a{
     .habit-title, .btn{
         width: 80%;
     }
-    .habit-content, .card, .footer-content{
+    .habit-content, .card, .footer-content, .calculator-content{
         grid-template-columns: 1fr;
     }
     
     .habit-image{
+        /* margin-top: 5px; */
         margin: 0 auto;
+    }
+    .image-one{
+        margin-top: 10px;
     }
     .run-content{
         grid-template-columns: 1fr;
@@ -379,10 +512,28 @@ a{
     .our-team{
         width: 100%;
     }
-    .footer-content{
+    .footer-content, .calculator-title{
         width: 96%;
         margin-left: 10px;
         padding-top: 0;
+    }
+    .calculate{
+        margin-left: 15px;
+        margin-top: 30px;
+        width: 80%;
+    }
+    input  select{
+        width: 250px;
+    }
+    input{
+        padding: 12px 0px 12px 20px;
+    }
+    .calculate-info{
+        width: 90%;
+    }
+    .bmi-chart{
+        margin-top: 30px;
+        margin-left: 10px;
     }
     .image-card{
         margin: 0 auto;
@@ -395,8 +546,26 @@ a{
         height: 1600px;
         margin-left: 20px;
     }
-    .footer{
+    .price-subscribe{
+        width: 100%;
         margin-top: 1100px;
+    }
+    .price-content{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .price{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .price h3{
+        margin-left: 20%;
+    }
+    .subscribe{
+        margin: 0 auto;
+    }
+    .footer{
+        margin-top: 180px;
     }
     .footer-hr{
         margin-top: 400px;
